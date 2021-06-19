@@ -1,0 +1,267 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+
+p::selection{
+
+    background: rgba(12, 127, 180, 0.5);
+    color: white;
+
+}
+
+$p-color: #615153;
+$line-height: 1.8;
+$word-spacing: 7px;
+
+.container{
+
+        width: 400px;
+        margin: 0% auto;
+
+
+        .img{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+           
+
+            img{
+
+                width: 192px;
+                height: 192px;
+                border-radius: 50%;
+                margin-bottom: 30px;
+
+            }
+
+            a{
+                text-decoration: none;
+                position: relative;
+                margin-bottom: 10px;
+
+               &::before{
+
+                position: absolute;
+                content: '';
+                width: 0%;
+                height: 2px;
+                background: black;
+                bottom: -2px;
+                left: 0px;
+
+               }
+
+               &:hover::before{
+
+                width: 100%;
+                transition: 500ms width;
+
+               }
+
+              
+
+                h1{
+
+                    color: rgba(21, 21, 121, 0.9);
+                    font-weight: 500;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    
+                    &:hover{
+                        color: black;
+                    }
+
+                }
+
+                
+            }
+
+            h4{
+                color: #978e95;
+                letter-spacing: 1px;
+                margin-top: 5px;
+            }
+
+        }
+
+        .info{
+
+            display: flex;
+            justify-content: center;
+
+            a{
+                margin-right: 15px;
+                margin-top: 15px;
+                color: blue;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 800;
+                position: relative;
+                text-decoration: none;
+
+                &::before{
+
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background-color: rgb(245, 9, 9);
+
+                
+                }
+
+
+                &:hover::before{
+
+                    width: 100%;
+                    transition: 500ms width;
+
+                }
+                
+            }
+
+        }
+    
+
+
+}
+
+
+.content{
+
+    width: 600px;
+    margin: 40px auto;
+
+    h3::first-letter:not(:last-child){
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: red;
+        font-weight: 400;
+        
+    }
+    h3{
+        color: blue;
+        font-size: 25px;
+    }
+    
+    p{
+
+        color: $p-color;
+        margin-top: 15px;
+        line-height: $line-height;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        width: 600px;
+        font-size: 18px;
+        text-align: justify;
+
+        
+
+    }
+
+    .personal-projects{
+
+        margin-top: 40px;
+
+        h3{
+            text-indent: -13px;
+            color: blue;
+        }
+
+        ul{
+            margin-top: 15px;
+        }
+        li{
+            color: $p-color;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: $line-height;
+            font-size: 18px;
+            word-spacing: $word-spacing;
+            width: 600px;
+            
+            a{
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline  1px wavy  red;
+                    text-underline-offset: 5px;
+                    
+                }
+                
+            }
+        }
+            
+    }
+
+
+    .keywords{
+
+        margin-top: 40px;
+        border: 1px solid #ddd;
+        background: rgba(0,0,0,0.8);
+        border-radius: 3px;
+
+        h3{
+            text-align: center;
+            padding: 10px;
+            color: rgb(224, 219, 219);
+
+        }
+        p{
+            padding: 10px;
+            color: rgba(241, 235, 235,0.9);
+
+        }
+
+    }
+
+
+
+    .links{
+
+        margin-top: 50px;
+
+        h3{
+            text-align: center;
+        }
+
+        ul{
+            margin-top: 20px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid #3dd;
+            margin-bottom: 15px;
+            padding: 10px;
+            display: block;
+            text-align: center;
+            margin-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            &:hover{
+                background: grey;
+                color: white;
+                transform: scale(1.4);
+                transition: 900ms transform, background;
+            }
+        }
+       
+
+    }
+
+    
+
+}
+
+
